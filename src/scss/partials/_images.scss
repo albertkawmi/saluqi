@@ -1,0 +1,31 @@
+//default image
+img {
+	width: 100%;
+	//margin: 1em auto;
+}
+
+p > img {
+	width: 33%;
+	float: right;
+	margin: 0 0 1em 1em;
+	@include mq(phone) { width: 100%; float: none; margin: 1em auto; }
+	@include mq(tablet) { width: 50%; }
+}
+
+figure.image {
+	background-color: $color-light;
+	padding: 0.5em;
+}
+
+figure.image > figcaption {
+
+}
+
+
+figure > img {
+	margin: 0;
+}
+.hero img {
+	width: auto;
+	border: 1em solid white;
+}
